@@ -1,0 +1,156 @@
+{
+ "name":"Autos",
+ "version":2,
+ "type":"Swerve",
+ "variables":{
+  "expressions":{
+   "FieldHeight":{
+    "dimension":"Length",
+    "var":{
+     "exp":"8.052 m",
+     "val":8.052
+    }
+   },
+   "HighDepthX":{
+    "dimension":"Length",
+    "var":{
+     "exp":"8.35 m",
+     "val":8.35
+    }
+   },
+   "IntakeMaxVel":{
+    "dimension":"Number",
+    "var":{
+     "exp":"2",
+     "val":2.0
+    }
+   },
+   "TopIntakeY":{
+    "dimension":"Number",
+    "var":{
+     "exp":"4.721095085144043",
+     "val":4.721095085144043
+    }
+   }
+  },
+  "poses":{
+   "Auto_Start":{
+    "x":{
+     "exp":"4.34 m",
+     "val":4.34
+    },
+    "y":{
+     "exp":"7.39 m",
+     "val":7.39
+    },
+    "heading":{
+     "exp":"-90 deg",
+     "val":-1.5707963267948966
+    }
+   },
+   "Auto_Start_Leave":{
+    "x":{
+     "exp":"Auto_Start.x + 1 m",
+     "val":5.34
+    },
+    "y":{
+     "exp":"Auto_Start.y",
+     "val":7.39
+    },
+    "heading":{
+     "exp":"Auto_Start.heading",
+     "val":-1.5707963267948966
+    }
+   },
+   "Follow1End":{
+    "x":{
+     "exp":"1 m",
+     "val":1.0
+    },
+    "y":{
+     "exp":"6 m",
+     "val":6.0
+    },
+    "heading":{
+     "exp":"180 deg",
+     "val":3.141592653589793
+    }
+   }
+  }
+ },
+ "config":{
+  "frontLeft":{
+   "x":{
+    "exp":"11 in",
+    "val":0.2794
+   },
+   "y":{
+    "exp":"11 in",
+    "val":0.2794
+   }
+  },
+  "backLeft":{
+   "x":{
+    "exp":"-11 in",
+    "val":-0.2794
+   },
+   "y":{
+    "exp":"11 in",
+    "val":0.2794
+   }
+  },
+  "mass":{
+   "exp":"150 lbs",
+   "val":68.0388555
+  },
+  "inertia":{
+   "exp":"6 kg m ^ 2",
+   "val":6.0
+  },
+  "gearing":{
+   "exp":"7.03125",
+   "val":7.03125
+  },
+  "radius":{
+   "exp":"1.99 in",
+   "val":0.050546
+  },
+  "vmax":{
+   "exp":"5000 RPM",
+   "val":523.5987755982989
+  },
+  "tmax":{
+   "exp":"1.5 N * m",
+   "val":1.5
+  },
+  "cof":{
+   "exp":"1.5",
+   "val":1.5
+  },
+  "bumper":{
+   "front":{
+    "exp":"14.375 in",
+    "val":0.365125
+   },
+   "side":{
+    "exp":"14.375 in",
+    "val":0.365125
+   },
+   "back":{
+    "exp":"14.375 in",
+    "val":0.365125
+   }
+  },
+  "differentialTrackWidth":{
+   "exp":"22 in",
+   "val":0.5588
+  }
+ },
+ "generationFeatures":[],
+ "codegen":{
+  "root":null,
+  "genVars":true,
+  "genTrajData":true,
+  "useChoreoLib":true
+ }
+}
